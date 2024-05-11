@@ -1,6 +1,47 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
 }
+
+.AppHeader {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px 8px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.AppFooter {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+.SideMenuAndPageContent {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.SideMenu {
+  height: 100%;
+}
+
+.sideMenuVertical {
+  height: 100%;
+}
+
+.pageContent {
+  padding-left: 12px;
+}
+
+/* ------------------------------------------- */
 
 .App-logo {
   height: 40vmin;
@@ -11,17 +52,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -36,3 +66,44 @@
     transform: rotate(360deg);
   }
 }
+
+/* GLASSMORPHISM LOGIN FORM 
+
+.appBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url('https://png.pngtree.com/background/20230526/original/pngtree-icy-mountains-3d-rendering-picture-image_2745553.jpg');
+  background-size: cover;
+}
+
+.loginForm {
+  background-color: rgba(225, 225, 225, 0.33);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 255, 0.33);
+  backdrop-filter: blur(3px);
+  padding: 0 16px 16px 16px;
+  border-radius: 16px;
+}
+
+.socialLogin {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.ggIcon {
+  color: red;
+}
+
+.fbIcon {
+  color: blue;
+}
+
+.ttIcon {
+  color: rgb(4, 110, 175);
+} 
+*/
